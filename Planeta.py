@@ -45,7 +45,26 @@
     "    def tatooine(self):\n",
     "        # Define this method based on your needs\n",
     "        pass\n",
-    "\n"
+    "def ejemplo_uso_planeta():\n",
+    "    # Creamos una estrella como anfitriona del planeta\n",
+    "    estrella = Estrella(\"Sol\", 1.989e30, 6.957e8)\n",
+    "\n",
+    "    # Creamos un planeta orbitando la estrella\n",
+    "    planeta = Planeta(estrella, \"Tierra\", 5.972e24, 6.371e6)\n",
+    "\n",
+    "    # Mostramos información sobre el planeta\n",
+    "    print(\"Nombre del planeta:\", planeta.nombre)\n",
+    "    print(\"Masa del planeta:\", planeta.masa)\n",
+    "    print(\"Radio del planeta:\", planeta.radio)\n",
+    "\n",
+    "    # Calculamos y mostramos la luminosidad total de la estrella anfitriona\n",
+    "    print(\"Luminosidad total de la estrella anfitriona:\", planeta.luminosidad())\n",
+    "\n",
+    "    # Calculamos y mostramos la luminosidad en la secuencia principal de la estrella anfitriona\n",
+    "    print(\"Luminosidad en la secuencia principal de la estrella anfitriona:\", planeta.luminosidad_sec_principal())\n",
+    "\n",
+    "# Ejecutamos el ejemplo\n",
+    "ejemplo_uso_planeta()\n"
    ]
   },
   {
